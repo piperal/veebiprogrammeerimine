@@ -10,7 +10,7 @@ const timeNowFormattedET = function(){
 }
 
 const weekDayNowET = function(){
-	const weekdayNamesEt = ["pأ¼hapأ¤ev", "esmaspأ¤ev", "teisipأ¤ev", "kolmapأ¤ev", "neljapأ¤ev", "reede", "laupأ¤ev"];
+	const weekdayNamesEt = ["pühapäev", "esmaspäev", "teisipäev", "kolmapäev", "neljapäev", "reede", "laupäev"];
 	return weekdayNamesEt[timeNow.getDay()];
 }
 
