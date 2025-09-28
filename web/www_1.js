@@ -70,8 +70,8 @@ http.createServer((req, res) => {
 		res.write(dateET.fullDate() + ", " + dateET.fullTime() + ", " + dateET.weekDay())
 		return res.end();
 	}
-	else if (q.pathname === "/vp_banner_2025_TA") {
-		let bannerPath = path.join(__dirname, "images");
+	else if (q.pathname.includes("/images")) {
+		let bannerPath = path.join(__dirname);
 		fs.readFile(bannerPath + q.pathname + ".jpg", (err, data) => {
 			if (err) {
 				console.log(err)
