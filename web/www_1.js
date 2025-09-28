@@ -75,7 +75,7 @@ http.createServer((req, res) => {
 		fs.readFile(bannerPath + q.pathname + ".jpg", (err, data) => {
 			if (err) {
 				console.log(err)
-				res.end()
+				res.end("404")
 			}
 			else {
 				res.writeHead("200", { "Content-type": "image/jpeg" });
